@@ -3,9 +3,20 @@
     <string name="widget_name">Spend Widget</string>
     <string name="widget_label_today_spend">TODAY\'S SPEND</string>
     <string name="spend_widget_desc">2x2 widget showing today\'s UPI spend</string>
-    <string name="landing_title">Track your UPI spend automatically</string>
-    <string name="landing_description">Add the 2x2 home-screen widget and this app will read eligible SMS alerts to keep today\'s spend updated in real time.</string>
-    <string name="landing_hint">After adding the widget and granting SMS permission, you can close the app.</string>
+    <string name="splash_label">WELCOME</string>
+    <string name="landing_title">Track UPI spending automatically</string>
+    <string name="landing_description">A minimalist home-screen widget that reads SMS transaction alerts to keep your daily spend total updated in real time.</string>
+    <string name="splash_privacy">Privacy First</string>
+    <string name="privacy_disclaimer">Your data never leaves your device. No servers, no cloud sync, no tracking. This app works 100% offline. All SMS parsing and spend tracking happens locally on your phone.</string>
+    <string name="splash_how_it_works">How It Works</string>
+    <string name="step_1">Add the 2x2 widget to your home screen</string>
+    <string name="step_2">Grant SMS permission when prompted</string>
+    <string name="step_3">Transaction messages automatically update your spend</string>
+    <string name="splash_connect">Connect</string>
+    <string name="landing_repo">GitHub: adithyapaib/nothingUPIspendwidget</string>
+    <string name="landing_linkedin">LinkedIn: in/adithyapaib</string>
+    <string name="landing_website">Website: adithyapaib.com</string>
+    <string name="landing_credit">Crafted by Adithya Pai B</string>
     <string name="widget_amount_default">₹ 0</string>
     <string name="waiting_for_sms">Waiting for SMS</string>
 </resources>

@@ -12,6 +12,9 @@ Android home-screen widget that shows today's UPI spend by parsing incoming SMS 
 - SMS-based auto-update for eligible transaction alerts
 - Lightweight setup flow for SMS permissions
 - Persists today's amount locally for widget refreshes
+- **🔒 100% offline** - No internet required, no data sent to servers
+- **Privacy-first** - All data stays on your device
+- **No tracking** - Zero analytics, zero cloud sync
 
 ## Tech Stack
 
@@ -42,8 +45,8 @@ These are used to read incoming SMS, update the widget amount, and restore behav
 ### Clone
 
 ```bash
-git clone https://github.com/adithyapaib/spend-widget.git
-cd spend-widget
+git clone https://github.com/adithyapaib/nothingUPIspendwidget.git
+cd nothingUPIspendwidget
 ```
 
 ### Open and Run
@@ -90,10 +93,24 @@ On Windows PowerShell:
 3. Commit your changes.
 4. Open a pull request.
 
-## Security and Privacy Notes
+## Privacy & Security
+
+### 🔒 Your Data Stays on Your Device
+
+**This app works 100% offline and never sends data to any server.**
+
+- ✅ All SMS parsing happens locally on your device
+- ✅ Spend amounts are stored only in local SharedPreferences
+- ✅ No internet connection required
+- ✅ No cloud sync or remote storage
+- ✅ No analytics or tracking
+- ✅ No third-party services
+
+### Security Best Practices
 
 - SMS data is sensitive. Review parsing/storage behavior before production release.
 - Do not commit signing keys, `local.properties`, or generated build artifacts.
+- The app only reads SMS for transaction detection - it does not send or share messages.
 
 ## License
 
