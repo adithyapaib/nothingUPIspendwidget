@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Spend Widget</string>
+    <string name="widget_name">Spend Widget</string>
+    <string name="widget_label_today_spend">TODAY\'S SPEND</string>
+    <string name="spend_widget_desc">2x2 widget showing today\'s UPI spend</string>
+    <string name="landing_title">Track your UPI spend automatically</string>
+    <string name="landing_description">Add the 2x2 home-screen widget and this app will read eligible SMS alerts to keep today\'s spend updated in real time.</string>
+    <string name="landing_hint">After adding the widget and granting SMS permission, you can close the app.</string>
+    <string name="widget_amount_default">₹ 0</string>
+    <string name="waiting_for_sms">Waiting for SMS</string>
+</resources>

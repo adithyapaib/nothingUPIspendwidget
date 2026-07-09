@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    2×2 widget: standard Android grid cell = 74dp per cell.
+    minWidth  = (2 × 74) − 2 = 146dp
+    minHeight = (2 × 74) − 2 = 146dp
+
+    updatePeriodMillis = 0 → updates are driven by SMS events and BOOT_COMPLETED,
+    not by the system polling timer (saves battery).
+-->
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+    android:minWidth="146dp"
+    android:minHeight="146dp"
+    android:targetCellWidth="2"
+    android:targetCellHeight="2"
+    android:updatePeriodMillis="0"
+    android:initialLayout="@layout/daily_spend_widget"
+    android:resizeMode="none"
+    android:widgetCategory="home_screen"
+    android:description="@string/spend_widget_desc" />
+
