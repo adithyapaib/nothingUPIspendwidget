@@ -4,7 +4,7 @@ Android home-screen widget that shows today's UPI spend by parsing incoming SMS 
 
 ## Preview
 
-![Spend Widget screenshot](./ss.jpg)
+![Spend Widget screenshot](./ss.png)
 
 ## Features
 
