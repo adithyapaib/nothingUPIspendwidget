@@ -6,12 +6,14 @@ Android home-screen widget that shows today's UPI spend by parsing incoming SMS 
 
 ![Spend Widget screenshot](./ss.png)
 
-## Download APK
+## 📥 Download APK
 
-- Direct download (v1.0.0):
-  https://github.com/adithyapaib/nothingUPIspendwidget/releases/download/v1.0.0/app-debug.apk
+Download the latest version from the GitHub Releases page:
 
-[![Download APK](https://img.shields.io/badge/Download-APK-brightgreen)](https://github.com/adithyapaib/nothingUPIspendwidget/releases/latest)
+[![Download APK](https://img.shields.io/badge/Download-Latest%20APK-brightgreen)](https://github.com/adithyapaib/nothingUPIspendwidget/releases/latest)
+
+Or visit:
+https://github.com/adithyapaib/nothingUPIspendwidget/releases/latest
 
 ## Features
 
