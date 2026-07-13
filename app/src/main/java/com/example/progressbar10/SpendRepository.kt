@@ -46,4 +46,12 @@ object SpendRepository {
         }
     }
 
+    /** Clear the persisted total for the current local day. */
+    fun resetToday(context: Context) {
+        context.getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE).edit {
+            putString(KEY_DATE, LocalDate.now().toString())
+            putFloat(KEY_TOTAL, 0f)
+        }
+    }
+
 }

@@ -17,6 +17,7 @@ Android home-screen widget that shows today's UPI spend by parsing incoming SMS 
 
 - 2x2 widget for quick spend visibility
 - SMS-based auto-update for eligible transaction alerts
+- Automatically clears the daily total and refreshes the widget at local midnight
 - Lightweight setup flow for SMS permissions
 - Persists today's amount locally for widget refreshes
 - **🔒 100% offline** - No internet required, no data sent to servers

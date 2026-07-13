@@ -2,7 +2,9 @@ package com.adithyapaib.spendwidget
 
 import android.appwidget.AppWidgetManager
 import android.appwidget.AppWidgetProvider
+import android.content.ComponentName
 import android.content.Context
+import android.content.Intent
 import android.util.Log
 import android.widget.RemoteViews
 import java.time.LocalDate
@@ -21,6 +23,25 @@ class DailySpendWidgetProvider : AppWidgetProvider() {
         appWidgetManager: AppWidgetManager,
         appWidgetIds: IntArray
     ) {
+        for (id in appWidgetIds) {
+            updateWidget(context, appWidgetManager, id)
+        }
+    }
+
+    override fun onReceive(context: Context, intent: Intent) {
+        super.onReceive(context, intent)
+
+        if (intent.action == Intent.ACTION_DATE_CHANGED) {
+            SpendRepository.resetToday(context)
+            updateAllWidgets(context)
+        }
+    }
+
+    private fun updateAllWidgets(context: Context) {
+        val appWidgetManager = AppWidgetManager.getInstance(context)
+        val appWidgetIds = appWidgetManager.getAppWidgetIds(
+            ComponentName(context, DailySpendWidgetProvider::class.java)
+        )
         for (id in appWidgetIds) {
             updateWidget(context, appWidgetManager, id)
         }
